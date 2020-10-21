@@ -121,25 +121,12 @@ provider_source.go:             source, moreDiags := providerSourceForCLIConfigL
 provider_source.go=func implicitProviderSource(services *disco.Disco) getproviders.Source {
 provider_source.go:func providerSourceForCLIConfigLocation(loc cliconfig.ProviderInstallationLocation, services *disco.Disco) (getproviders.Source, tfdiags.Diagnostics) {
 
-## 6.	git log -SglobalPluginDirs
-commit 35a058fb3ddfae9cfee0b3893822c9a95b920f4c
-Author: Martin Atkins <mart@degeneration.co.uk>
-Date:   Thu Oct 19 17:40:20 2017 -0700
+## 6. git log -SglobalPluginDirs --oneline
 
-    main: configure credentials from the CLI config file
+35a058fb3 main: configure credentials from the CLI config file
+c0b176109 prevent log output during init
+8364383c3 Push plugin discovery down into command package
 
-commit c0b17610965450a89598da491ce9b6b5cbd6393f
-Author: James Bardin <j.bardin@gmail.com>
-Date:   Mon Jun 12 15:04:40 2017 -0400
-
-    prevent log output during init
-
-    The extra output shouldn't be seen by the user, and is causing TFE to
-    fail.
-
-commit 8364383c359a6b738a436d1b7745ccdce178df47
-Author: Martin Atkins <mart@degeneration.co.uk>
-Date:   Thu Apr 13 18:05:58 2017 -0700
 
 ## 7.	git log -SsynchronizedWriters --pretty=format:"%an"
 
